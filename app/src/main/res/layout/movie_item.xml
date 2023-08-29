@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:orientation="horizontal">
+
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/rank"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#544B4B"
+        android:text="1"
+        android:textColor="#FFFFFF"
+        />
+
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/rank"
+        android:id="@+id/movie_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="어벤저스"/>
+
+    <TextView
+        android:id="@+id/movie_audience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_weight="1"
+        android:text="관객"
+        app:layout_constraintLeft_toRightOf="@id/rank"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:src="@drawable/ic_sort_up_solid"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_rankInten"
+        android:id="@+id/iv_rankInten"
+        app:layout_constraintRight_toLeftOf="@id/tv_rankInten"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/tv_rankInten"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
